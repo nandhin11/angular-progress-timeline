@@ -15,7 +15,7 @@ import { bootstrapApplication } from '@angular/platform-browser';
       <span *ngIf="status.completed">&#10003;</span>
     </div>
     <div class="vertical-line" [ngClass]="{ 'completed': status.completed, 'no-line': !status.completed }" *ngIf="!last"></div>
-    <div class="additional-line" *ngIf="!last && !status.completed" ></div>
+    <div class="additional-line" *ngIf="!last && !status.completed  " ></div>
 
     <div class="status-message">
       {{ status.message }}
